@@ -51,7 +51,7 @@ for sub in subjects:
     
     #save to food_ratings.csv
     to_pth = os.path.join(tmp_pth,'food_ratings.csv');
-    pd.DataFrame(like).to_csv( to_pth, float_format='%d', index = False);
+    pd.DataFrame(like).to_csv( to_pth, float_format='%d', index = False,header = False);
     
     #create a random sequence
     seq = np.repeat( np.arange(30), 5 ) + 1;
@@ -61,7 +61,7 @@ for sub in subjects:
     like_seq = np.array( [ like[ np.where( like[:,0] == x ),1 ].squeeze() 
                              for x in seq ] );
     to_pth = os.path.join( tmp_pth, 'rating_sequence.csv');
-    pd.DataFrame(like_seq).to_csv( to_pth, float_format='%d', index = False);
+    pd.DataFrame(like_seq).to_csv( to_pth, float_format='%d', index = False, header = False);
     
     #z-transform
     z_like = ( like_seq - like_seq.mean() ) / like_seq.std();
@@ -86,5 +86,5 @@ for sub in subjects:
     
     #write to file:
     to_pth = os.path.join(tmp_pth, 'sequence_RT.csv');
-    pd.DataFrame( seq_reac ).to_csv(to_pth, index = False )
+    pd.DataFrame( seq_reac ).to_csv(to_pth, index = False, header = False )
     
