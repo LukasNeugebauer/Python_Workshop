@@ -1,4 +1,5 @@
-# Python_Workshop
-Material for Introduction to Python for MATLAB users (Workshop April 2019, UKE Hamburg)
+# Introduction to scientific Python for MATLAB users
 
-Contains notebooks, scripts, cheat sheets and graphics for notebooks for the workshop to be held at Institute for Systems Neuroscience of UKE Hamburg 8th to 10th april of 2019.
+This repo contains the material for a workshop that is being held in the Institute for Systems Neuroscience of the University Medical Center Hamburg Eppendorf, Germany. The notebooks are written in a way that allows for self-study. If you do want to follow along on your own, just clone the repository and go through the notebooks one by one.
+
+If you don't know yet how to open jupyter notebooks, Github should render them for you. Alternatively, you can use the notebook viewer: https://nbviewer.org/github/LukasNeugebauer/Python_Workshop/tree/master/notebooks/
